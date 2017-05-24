@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Trivia Game!</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-G3G7OsJCbOk1USkOY4RfeX1z27YaWrZ1YuaQ5tbuawed9IoreRDpWpTkZLXQfPm3" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="jumbotron">
+		<h1><center>Pokemon Trivia Game!</center></h1>
+
+		<br>
+
+		<center><button type="button" class="btn btn-primary btn-lg" id="quizStart">Start Quiz!</button></center>
+
+		<div class=container id="quizDiv">
+			<div class="questionDiv" id="timeDiv">
+				<h2><center>Time Left: <span id="timeLeft">500</span></center></h2>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question1">
+			<p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+				<center>
+					<input type="radio" class="btn btn-default btn-xs" name="a" id="choice11">Answer Choice #1</input>
+					<input type="radio" class="btn btn-default btn-xs" name="a" id="choice12">Answer Choice #2</input>
+					<input type="radio" class="btn btn-default btn-xs" name="a" correct="yes">Answer Choice #3</input>
+					<input type="radio" class="btn btn-default btn-xs" name="a">Answer Choice #4</input>
+				</center>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question2">
+			<p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+			<button type="button" class="btn btn-default btn-xs" id="choice21">Answer Choice #1</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice22">Answer Choice #2</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice23">Answer Choice #3</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice24">Answer Choice #4</button>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question3">
+			<p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+			<button type="button" class="btn btn-default btn-xs" id="choice31">Answer Choice #1</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice32">Answer Choice #2</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice33">Answer Choice #3</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice34">Answer Choice #4</button>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question4">
+			<p>4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+			<button type="button" class="btn btn-default btn-xs" id="choice41">Answer Choice #1</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice42">Answer Choice #2</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice43">Answer Choice #3</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice44">Answer Choice #4</button>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question5">
+			<p>5. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+			<button type="button" class="btn btn-default btn-xs" id="choice51">Answer Choice #1</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice52">Answer Choice #2</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice53">Answer Choice #3</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice54">Answer Choice #4</button>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question6">
+			<p>6. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+			<button type="button" class="btn btn-default btn-xs" id="choice61">Answer Choice #1</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice62">Answer Choice #2</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice63">Answer Choice #3</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice64">Answer Choice #4</button>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question7">
+			<p>7. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+			<button type="button" class="btn btn-default btn-xs" id="choice71">Answer Choice #1</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice72">Answer Choice #2</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice73">Answer Choice #3</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice74">Answer Choice #4</button>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question8">
+			<p>8. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+			<button type="button" class="btn btn-default btn-xs" id="choice81">Answer Choice #1</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice82">Answer Choice #2</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice83">Answer Choice #3</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice84">Answer Choice #4</button>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question9">
+			<p>9. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+			<button type="button" class="btn btn-default btn-xs" id="choice91">Answer Choice #1</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice92">Answer Choice #2</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice93">Answer Choice #3</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice94">Answer Choice #4</button>
+			</div>
+
+			<br>
+
+			<div class="questionDiv" id="question10">
+			<p>10. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo facilis ipsa esse dolor? Vitae tempora soluta explicabo laborum sunt aspernatur enim mollitia, distinctio commodi perspiciatis, consequuntur quasi nemo repellat. Minus.</p>
+			<button type="button" class="btn btn-default btn-xs" id="choice101">Answer Choice #1</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice102">Answer Choice #2</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice103">Answer Choice #3</button>
+			<button type="button" class="btn btn-default btn-xs" id="choice104">Answer Choice #4</button>
+			</div>
+		</div>
+
+	</div>
+
+	
+
+
+
+</div>
+
+
+</body>
+
+</html>
+
+<!-- 
+Pseudocode!
+1. Create Start Button
+2. Have timeRemaining div display time left for quiz
+3. Have questionDivs with button selectors
+4. Have quizDone button that ends the quiz
+5. Clear page of questionDivs
+6. finishedDiv that calculates and displays the number of Correct and Incorrect and # of unanswered questions
+7. Have this occur at the end of time 
+
+
+-->
