@@ -23,6 +23,7 @@ $(document).ready(function() {
 
 		start: function() {
 			$("#quizStart").hide();	
+			$(".jumbotron").css("background-color", "#79C9FA");
 			$("#quizDiv").html("<div id='timeDiv'><h2><center>Time Left: <span id='timeLeft'>500</span></center></h2></div>");
 			quiz.renderQuestions();
 			$("#quizEnd").show();
