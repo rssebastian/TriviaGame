@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$("#quizEnd").click(quiz.generateResultDiv);
 });
 	var intervalId;
-	var userChoice, question, answerA, answerB, answerC, answerD, choices, correct = 0, incorrect = 0, unanswered = 0, answerArray = [];
+	var userChoice, question, answerA, answerB, answerC, answerD, choices, correct = 0, incorrect = 0, unanswered = 0;
 	var quizQuestions = [
 			[ "How many Pokemon were in the first generation?", "100", "151", "84", "250", "B" ],
 			[ "As of May 2017, how many generations are there now?", "5", "7", "11", "13", "B" ],
@@ -28,6 +28,9 @@ $(document).ready(function() {
 			quiz.renderQuestions();
 			$("#quizEnd").show();
 			quiz.time = 500;
+			correct = 0;
+			incorrect = 0;
+			unanswered = 0;
 			clearInterval(intervalId);
 			intervalId = setInterval(quiz.countdown, 1000);
 		},
